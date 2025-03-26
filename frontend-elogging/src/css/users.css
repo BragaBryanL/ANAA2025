@@ -1,0 +1,191 @@
+.users-container {
+    padding: 30px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.users-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Reduced margin between title and button */
+    margin-left: 170px;
+}
+
+.add-faculty-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 50rem; /* Align with title */
+    margin-bottom: 20px; /* Reduced space between button and table */
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.add-faculty-btn:hover {
+    background-color: #0056b3;
+}
+
+.modal-content {
+    background-color: #c7d8fc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.close {
+    font-size: 25px;
+}
+
+.modal-content {
+    background-color: #f8f9fa; /* Lighter background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px; /* Adjusted width for better spacing */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: #bddeff; /* Light background */
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px; /* Slightly smaller width */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px; /* Reduced space between title and form */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Reduced gap between form elements */
+}
+
+input {
+    padding: 7px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 95%;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    outline: none;
+}
+
+.submit-btn {
+    padding: 10px 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    align-self: center;
+    width: 100%;
+    margin-top: 15px; /* Less margin on top of the button */
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+.close {
+    font-size: 28px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #333;
+}
+
+.users-table {
+    width: 90%;
+    margin-left: 170px; /* Align table with title and button */
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.users-table th,
+.users-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 16px;
+}
+
+.users-table th {
+    background-color: #343a40;
+    color: white;
+}
+
+.users-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.users-table td button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.users-table td button:hover {
+    background-color: #0056b3;
+}
+
+.users-table td button:nth-child(1) {
+    background-color: #ffa600;
+}
+
+.users-table td button:nth-child(1):hover {
+    background-color: #e0a800;
+}
+
+.users-table td button:nth-child(2) {
+    background-color: #dc3545;
+}
+
+.users-table td button:nth-child(2):hover {
+    background-color: #c82333;
+}

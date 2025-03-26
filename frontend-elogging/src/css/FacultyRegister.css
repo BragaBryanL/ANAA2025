@@ -1,0 +1,95 @@
+.faculty-register-container {
+  padding: 30px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+.add-faculty-btn {
+  padding: 10px 20px; 
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.add-faculty-btn:hover {
+  background-color: #0056b3;
+}
+
+.modal-content {
+  background-color: #c7d8fc;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  margin-left: 50vh;
+  cursor: pointer;
+}
+.close{
+  font-size: 25px;
+}
+.modal-content h2{
+  font-size: 20px;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px; 
+  margin: 5px 0; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; 
+}
+
+.submit-btn {
+  padding: 10px; 
+  width: 100px;
+  align-self: center;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+.faculty-table {
+  width: 100%;
+  margin-left: 100px;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faculty-table th,
+.faculty-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 16px;
+}
+
+.faculty-table th {
+  background-color: #343a40;
+  color: white;
+}
+
+.faculty-table tr:hover {
+  background-color: #f1f1f1;
+}

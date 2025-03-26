@@ -1,0 +1,166 @@
+/* dashboard.css */
+
+/* Dashboard container styles */
+.dashboard-container {
+    display: flex;
+    width: 100%; 
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+
+/* Content area styles */
+.content {
+    flex: 1; 
+    padding: 20px; 
+    margin-left: 250px; /* Adjusted to increase space from the sidebar */
+    background-color: #f4f4f4;
+    border-radius: 8px; 
+    min-width: 300px; 
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+/* Card container styles */
+.card-container {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    margin-bottom: 30px; 
+    margin-left: 20px;
+}
+
+/* Individual card styles */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 10px;
+    width: 30%;
+    text-align: center;
+    color: white;
+    height: 150px; 
+    min-width: 100px; 
+}
+
+.card h2 {
+    font-size: 30px;
+    text-align: end;
+    margin-right: 30px;
+    font-weight: bold;
+    color: #fffec7;
+}
+
+.card p {
+    text-align: start;
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Specific colors for cards */
+.card.available {
+    background-color: #28a746ea; /* Green for Available */
+}
+
+.card.busy {
+    background-color: #ff8c00e1; /* Orange for Busy */
+}
+
+.card.offline {
+    background-color: #dc3546e8; /* Red for Offline */
+}
+
+/* Notification widget layout */
+.layout {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px;
+    margin-left: 0;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+}
+
+/* Notification widget styles */
+.notification-widget {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box; 
+    margin-left: 15px;
+}
+
+.notification-widget h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+/* Notification list styles */
+.notification-widget ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notification-widget li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.notification-widget li:hover {
+    background-color: #dfdede;
+    padding: 10px;
+}
+
+.notification-widget li:last-child {
+    border-bottom: none;
+}
+
+.notification-widget li::before {
+    content: "🔔"; 
+    margin-right: 8px; 
+    font-size: 14px;
+}
+
+.notification-widget li span {
+    flex: 1; 
+    color: #555;
+    font-size: 14px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .notification-widget {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+    }
+
+    .notification-widget {
+        padding: 10px;
+    }
+}
